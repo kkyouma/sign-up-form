@@ -95,8 +95,24 @@ fieldset > div.input {
   font-size: 0.8em;
 }
 
-input {
-  height: 2em;
+input.create-acc {
+  border: 1px solid var(--color1);
+  background-color: #fff;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+input[type="text"], input[type="email"] {
+
+}
+:focus {
+  outline: 0;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+  border: #711717;
 }
 
 h1 {
