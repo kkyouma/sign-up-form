@@ -8,13 +8,14 @@
   --color5: #03001C;
   --gap-long: 150px;
   --gap-short: 20px;
+  --padding-long: 50px;
   --img-height: 100vh;
   --img-width: 40vw;
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  /* margin: 0px; */
+  /* padding: 0px; */
   box-sizing: border-box;
 }
 
@@ -47,6 +48,7 @@ section.con#form-stuff {
 
 section > div.pila {
   flex: 1;
+  padding: var(--padding-long);
 }
 
 section > div.pila#form-container {
@@ -56,10 +58,11 @@ section > div.pila#form-container {
   background-color: var(--color5);
 }
 
-fieldset {
+fieldset.camp {
   display: flex;
+  justify-content: left;
   background-color: transparent;
-  gap: var(--gap1);
+  gap: var(--gap-long);
 }
 
 fieldset > div.input {
