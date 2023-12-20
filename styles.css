@@ -11,9 +11,24 @@ body {
   font-family: 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: rgb(31, 31, 43);
   color: var(--color4);
+  box-sizing: border-box;
+  border: 1px solid var(--color4);
 }
 
 div.extra {
   background-color: var(--color4);
-  
+}
+
+main.container {
+  display: flex;
+}
+
+main > section.con {
+  max-width: 50% 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+section > div.pila {
+  height: 30% 200px;
 }
