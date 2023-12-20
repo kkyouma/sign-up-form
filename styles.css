@@ -5,9 +5,11 @@
   --color2: #5584AC;
   --color3: #95D1CC;
   --color4: #F6F2D4;
+  --color5: #03001C;
   --gap-long: 150px;
   --gap-short: 20px;
-  --img-size1: 100vh;
+  --img-height: 100vh;
+  --img-width: 40vw;
 }
 
 body {
@@ -15,10 +17,11 @@ body {
   background-color: rgb(31, 31, 43);
   color: var(--color4);
   box-sizing: border-box;
+  margin: 0px;
 }
 
 div.extra {
-  background-color: var(--color1);
+  background-color: var(--color5);
   flex: 1;
 }
 
@@ -45,7 +48,7 @@ section > div.pila#form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--color2);
+  background-color: var(--color5);
   gap: var(--gap-short);
 }
 
@@ -61,6 +64,7 @@ fieldset > div.input {
 }
 
 img {
-  height: var(--img-size1);
+  height: calc(var(--img-height) - 5px);
+  min-width: var(--img-width);
 }
 
