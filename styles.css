@@ -9,5 +9,6 @@
 
 body {
   font-family: 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: darkblue;
+  background-color: rgb(31, 31, 43);
+  color: var(--color4);
 }
