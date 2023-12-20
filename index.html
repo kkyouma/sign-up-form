@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
-</head>
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
 <body>
   <main class="container">
 
@@ -51,7 +52,7 @@
             
             <div class="input">
               <label for="phone">Phone</label>
-              <input class="create-acc" type="number" id="phone" placeholder="+56 9">
+              <input class="create-acc" type="number" id="phone" placeholder="+56 9" pattern="(569\d{8})" required>
             </div>
           </fieldset>
           
@@ -66,12 +67,11 @@
               <input class="create-acc" type="password" id="password2">
             </div>
           </fieldset>
-          
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="" id="login">Log in</a></p>
         </form>
       </div>
       <div class="pila extra" id="last">
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </section>
 

@@ -102,6 +102,10 @@ section > div.pila#form-container {
   gap: 0px;
 }
 
+div.pila#form-container > form > p {
+  margin-top: 20px;
+}
+
 fieldset.camp {
   display: flex;
   justify-content: left;
@@ -150,12 +154,15 @@ input.create-acc:invalid {
   border-color: rgb(255, 94, 94);
 }
 
+input.create-acc:required {
+  border-color: var(--color3);
+}
+
 h1 {
   padding-bottom: 1em;
 }
 
 img {
-  /* width: 100%; */
   max-height: var(--img-height);
 }
 
@@ -172,13 +179,21 @@ p.author-reference {
   color: var(--color-text-light);
 }
 
+p form {
+  font-size: 1em;
+  color: var(--color-text-light);
+}
+
 a {
-  text-decoration: none;
   color: var(--color3);
 }
 
 a:hover {
-  color: var(--color2);
+  text-decoration: none;
+}
+
+a#login {
+  color: var(--color1);
 }
 
 ::selection {
