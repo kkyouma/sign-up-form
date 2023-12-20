@@ -1,6 +1,8 @@
 :root {
   --color-text-light: #fff;
   --color-text-dark: #000;
+  --bg-color1: #fcfcfc;
+  --bg-color2: #fff;
   --color1: #22577E;
   --color2: #5584AC;
   --color3: #95D1CC;
@@ -23,7 +25,7 @@
 body {
   font-family: 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: rgb(31, 31, 43);
-  color: var(--color4);
+  color: var(--color-text-dark);
 }
 
 div.extra {
@@ -61,6 +63,7 @@ section > div.pila {
   justify-content: center;
   flex: 1;
   padding: 0px 50px;
+  background-color: var(--bg-color1);
 }
 
 section > div.pila#last {
@@ -75,7 +78,7 @@ div.pila > button[type=submit] {
 
 section > div.pila#form-container {
   justify-content: center;
-  background-color: var(--color5);
+  background-color: var(--bg-color2);
 }
 
 fieldset.camp {
