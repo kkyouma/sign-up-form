@@ -1,3 +1,13 @@
+:root {
+  --color-text-light: #fff;
+  --color-text-dark: #000;
+  --color1: #22577E;
+  --color2: #5584AC;
+  --color3: #95D1CC;
+  --color4: #F6F2D4;
+}
+
 body {
+  font-family: 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: darkblue;
 }
