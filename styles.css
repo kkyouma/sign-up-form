@@ -5,7 +5,8 @@
   --color2: #5584AC;
   --color3: #95D1CC;
   --color4: #F6F2D4;
-  --gap1: 150px;
+  --gap-long: 150px;
+  --gap-short: 20px;
   --img-size1: 100vh;
 }
 
@@ -14,15 +15,16 @@ body {
   background-color: rgb(31, 31, 43);
   color: var(--color4);
   box-sizing: border-box;
-  border: 1px solid var(--color4);
 }
 
 div.extra {
-  background-color: var(--color4);
+  background-color: var(--color1);
+  flex: 1;
 }
 
 main.container {
   display: flex;
+  max-width: 100%;
 }
 
 main > section.con {
@@ -31,13 +33,26 @@ main > section.con {
   flex-direction: column;
 }
 
+section.con#form-stuff {
+  flex: 1;
+}
+
 section > div.pila {
-  height: 30% 200px;
+  flex: 1;
+}
+
+section > div.pila#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color2);
+  gap: var(--gap-short);
 }
 
 fieldset {
   display: flex;
-  gap: var(--gap1)
+  gap: var(--gap1);
+  background-color: transparent;
 }
 
 fieldset > div.input {
@@ -48,3 +63,4 @@ fieldset > div.input {
 img {
   height: var(--img-size1);
 }
+
