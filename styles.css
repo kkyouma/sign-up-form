@@ -31,6 +31,14 @@ div.extra {
   flex: 1;
 }
 
+div.extra#first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.5em;
+}
+
 main.container {
   display: flex;
   width: 100%;
@@ -48,10 +56,11 @@ section.con#form-stuff {
 }
 
 section > div.pila {
-  flex: 1;
-  padding: 20px 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 0px 50px;
 }
 
 section > div.pila#last {
@@ -65,7 +74,7 @@ div.pila > button[type=submit] {
 }
 
 section > div.pila#form-container {
-  justify-content: space-around;
+  justify-content: center;
   background-color: var(--color5);
 }
 
@@ -100,4 +109,15 @@ img {
   object-fit: cover;
 }
 
+div.image-container {
+  height: var(--img-height);
+  font-size: 1em;
+}
+
+p.author-reference {
+  font-size: 1em;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
 
