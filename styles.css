@@ -8,6 +8,7 @@
   --color3: #95D1CC;
   --color4: #F6F2D4;
   --color5: #03001C;
+  --color6: #22577E;
   --gap-long: 150px;
   --gap-short: 20px;
   --padding-short: 5px;
@@ -79,7 +80,7 @@ button[type=submit] {
   border-radius: 7px;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
   width: 250px;
-  background-color: var(--color3);
+  background-color: var(--color6);
   font-size: 1em;
   font-weight: bold;
   color: var(--color-text-light);
@@ -133,6 +134,10 @@ input.create-acc {
   border-radius: 5px;
 }
 
+input.create-acc:valid {
+  border-color: var(--color3);
+}
+
 :focus {
   outline: 0;
 }
@@ -164,5 +169,20 @@ p.author-reference {
   position: absolute;
   bottom: 10px;
   left: 10px;
+  color: var(--color-text-light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+a:hover {
+  color: var(--color2);
+}
+
+::selection {
+  background-color: var(--color3);
+  color: var(--color-text-light);
 }
 
