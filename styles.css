@@ -8,14 +8,15 @@
   --color5: #03001C;
   --gap-long: 150px;
   --gap-short: 20px;
+  --padding-short: 5px;
   --padding-long: 50px;
   --img-height: 100vh;
   --img-width: 40vw;
 }
 
 * {
-  /* margin: 0px; */
-  /* padding: 0px; */
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -48,12 +49,20 @@ section.con#form-stuff {
 
 section > div.pila {
   flex: 1;
-  padding: var(--padding-long);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+section > div.pila#last {
+  
+}
+
+div.pila > button[type=submit] {
+  padding: var(--padding-short);
 }
 
 section > div.pila#form-container {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   background-color: var(--color5);
 }
@@ -63,11 +72,24 @@ fieldset.camp {
   justify-content: left;
   background-color: transparent;
   gap: var(--gap-long);
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  border: none;
 }
 
 fieldset > div.input {
   display: flex;
   flex-direction: column;
+  gap: 2px;
+  font-size: 1em;
+}
+
+input {
+  height: 2em;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 img {
@@ -75,4 +97,5 @@ img {
   min-width: var(--img-width);
   object-fit: cover;
 }
+
 
