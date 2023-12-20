@@ -49,17 +49,19 @@ section.con#form-stuff {
 
 section > div.pila {
   flex: 1;
-  padding: 50px;
+  padding: 20px 50px;
   display: flex;
   flex-direction: column;
 }
 
 section > div.pila#last {
-  
+  gap: 10px;
+  justify-content: left;
 }
 
 div.pila > button[type=submit] {
   padding: var(--padding-short);
+  width: 200px;
 }
 
 section > div.pila#form-container {
@@ -72,7 +74,7 @@ fieldset.camp {
   justify-content: left;
   background-color: transparent;
   gap: var(--gap-long);
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   text-transform: uppercase;
   border: none;
 }
@@ -81,7 +83,7 @@ fieldset > div.input {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 input {
@@ -89,7 +91,7 @@ input {
 }
 
 h1 {
-  font-size: 2em;
+  padding-bottom: 1em;
 }
 
 img {
