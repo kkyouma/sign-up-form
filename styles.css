@@ -12,12 +12,16 @@
   --img-width: 40vw;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: rgb(31, 31, 43);
   color: var(--color4);
-  box-sizing: border-box;
-  margin: 0px;
 }
 
 div.extra {
@@ -27,7 +31,7 @@ div.extra {
 
 main.container {
   display: flex;
-  max-width: 100%;
+  width: 100%;
 }
 
 main > section.con {
@@ -38,6 +42,7 @@ main > section.con {
 
 section.con#form-stuff {
   flex: 1;
+  min-width: var(--img-width);
 }
 
 section > div.pila {
@@ -47,15 +52,14 @@ section > div.pila {
 section > div.pila#form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   background-color: var(--color5);
-  gap: var(--gap-short);
 }
 
 fieldset {
   display: flex;
-  gap: var(--gap1);
   background-color: transparent;
+  gap: var(--gap1);
 }
 
 fieldset > div.input {
@@ -66,5 +70,6 @@ fieldset > div.input {
 img {
   height: calc(var(--img-height) - 5px);
   min-width: var(--img-width);
+  object-fit: cover;
 }
 
