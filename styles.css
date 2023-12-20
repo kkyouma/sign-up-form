@@ -12,3 +12,8 @@ body {
   background-color: rgb(31, 31, 43);
   color: var(--color4);
 }
+
+div.extra {
+  background-color: var(--color4);
+  
+}
