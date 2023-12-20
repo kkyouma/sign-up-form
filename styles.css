@@ -5,6 +5,8 @@
   --color2: #5584AC;
   --color3: #95D1CC;
   --color4: #F6F2D4;
+  --gap1: 150px;
+  --img-size1: 100vh;
 }
 
 body {
@@ -31,4 +33,18 @@ main > section.con {
 
 section > div.pila {
   height: 30% 200px;
+}
+
+fieldset {
+  display: flex;
+  gap: var(--gap1)
+}
+
+fieldset > div.input {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: var(--img-size1);
 }
